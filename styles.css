@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #00aaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  text-transform: uppercase;
+}
+
+.card.flip {
+  background-color: #ff6600;
+}
+
+.hidden {
+  background-color: #ccc;
+  pointer-events: none;
+}
